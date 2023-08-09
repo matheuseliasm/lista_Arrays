@@ -4,11 +4,20 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
+    const n1 = Number(prompt(`Informe um número inteiro:`));
+    const n2 = Number(prompt(`Informe outro numero:`)
+    )
 
 
     //PROCESSAMENTO
-
-
+    let arrayvazio = [];
+    if (n1 > n2) {
+        arrayvazio = [n2,n1]
+    }
+    else {
+        arrayvazio = [n1,n2]
+    }
     //SAÍDA
+    alert(`Os elementos do array são : ${arrayvazio.join (" - ")}`)
     
 </script>
