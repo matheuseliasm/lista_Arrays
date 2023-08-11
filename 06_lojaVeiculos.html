@@ -1,20 +1,30 @@
 <script>
-    //Problema: Loja de veículos
-    //Crie os seguintes arrays:
-    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
-    // let carrosHatch = ["308", "Focus", "i30"];
-    
-    //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+  //Problema: Loja de veículos
+  //Crie os seguintes arrays:
+  // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+  // let carrosHatch = ["308", "Focus", "i30"];
 
-    //Apresente a lista final de cada tipo de veículo.
+  //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
-    //ENTRADA
+  //Apresente a lista final de cada tipo de veículo.
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+  //ENTRADA
+  let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+  let carrosHatch = ["308", "Focus", "i30"];
+  let novocarro = prompt(`Informe três carros novos`);
+  let tipoveiculo = prompt(`Informe o tipo de seu veiculo`);
+  //PROCESSAMENTO
+  if (tipoveiculo === "Suv") {
+    carrosSUV.push(novocarro);
+  } else if (tipoveiculo === "Sedan") {
+    carrosSedan.push(novocarro);
+  } else if (tipoveiculo === "Hatch") {
+    carrosHatch.push(novocarro);
+  }
+  //SAÍDA
+  alert(`Os carros da marca SUV São:` + carrosSUV);
+  alert(`Os carros da marca Sedan são:` + carrosSedan);
+  alert(`Os carros da marca Hatch são: ` + carrosHatch);
 </script>

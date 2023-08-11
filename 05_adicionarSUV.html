@@ -1,16 +1,17 @@
 <script>
-    //Problema: Adicionar SUV
-    //Crie os seguintes arrays:
-    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    //Pergunte ao usuário qual carro deseja ADICIONAR na lista.
-    //Apresente a lista antiga de SUVs e a nova lista, após a adição do veículo solicitado.
+  //Problema: Adicionar SUV
+  //Crie os seguintes arrays:
+  // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  //Pergunte ao usuário qual carro deseja ADICIONAR na lista.
+  //Apresente a lista antiga de SUVs e a nova lista, após a adição do veículo solicitado.
 
-    //ENTRADA
+  //ENTRADA
+  let soma = prompt(`Informe qual carro deseja adicionar na lista`);
+  let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 
+  //PROCESSAMENTO
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+  //SAÍDA
+  alert("A lista antiga é: " + carrosSUV.slice(0, carrosSUV.length - 1));
+  alert("A nova lista é: " + carrosSUV.join(soma));
 </script>

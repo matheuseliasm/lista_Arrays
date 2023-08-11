@@ -1,18 +1,29 @@
 <script>
-    //Problema: Itens da lista de compras
-    //Peça para o usuário inserir 3 frutas para a lista de compras. (Use 3 vezes o prompt).
-    //Peça também para o usuário inserir 3 bebidas para a lista de compras (Use outras 3 vezes o prompt).
-    //Crie um array para cada tipo de item e, ao fim, apresente os itens da sequinte forma: 
-    //As frutas a serem compradas são: fruta1, fruta2, fruta3.
-    //As bebidas a serem compradas são: bebida1, bebida2, bebida3.
-    //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
+  //Problema: Itens da lista de compras
+  //Peça para o usuário inserir 3 frutas para a lista de compras. (Use 3 vezes o prompt).
+  //Peça também para o usuário inserir 3 bebidas para a lista de compras (Use outras 3 vezes o prompt).
+  //Crie um array para cada tipo de item e, ao fim, apresente os itens da sequinte forma:
+  //As frutas a serem compradas são: fruta1, fruta2, fruta3.
+  //As bebidas a serem compradas são: bebida1, bebida2, bebida3.
+  //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
-    //ENTRADA
-
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+  //ENTRADA
+  const fru1 = prompt(`Informe a primeira fruta:`);
+  const fru2 = prompt(`Informe a segunda fruta: `);
+  const fru3 = prompt(`Informe a terceira fruta:`);
+  const be1 = prompt(`Informe a primeira bebida:`);
+  const be2 = prompt(`Informe a segunda bebida:`);
+  const be3 = prompt(`Ìnforme a terceira fruta`);
+  //PROCESSAMENTO
+  let arrayfruta = [fru1, fru2, fru3];
+  let arraybebida = [be1, be2, be3];
+  //SAÍDA
+  alert(`As frutas a serem compradas são: ${arrayfruta.join(", ")}.`);
+  alert(`As bebidas a serem compradas são: ${arraybebida.join(", ")}.`);
+  alert(
+    `A lista completa de compras é: ${arrayfruta
+      .concat(arraybebida)
+      .join(", ")}.`
+  );
 </script>
+x
